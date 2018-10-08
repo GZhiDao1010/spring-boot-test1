@@ -1,0 +1,63 @@
+# Created by .ignore support plugin (hsz.mobi)
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle/
+
+# Log Files
+*.log
+
+# Intellij
+*.iml
+/.idea/
+
+### Java template
+# Compiled class file
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+### Eclipse template
+
+.metadata
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.settings/
+.loadpath
+.recommenders
+
+# Eclipse Core
+.project
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+/*/target/
+/logs/
+/*/LOG_HOME_IS_UNDEFINED/
+/*/logs/
+rebel.xml
+/hardware-generator/src/main/java/com/gt/hardware/generator/xml/
+/hardware-generator/src/main/java/com/gt/hardware/generator/entity/
+/hardware-generator/src/main/java/com/gt/hardware/generator/service/
+/hardware-generator/src/main/java/com/gt/hardware/generator/mapper/
+/hardware-generator/src/main/java/com/gt/hardware/generator/web/
+/classes/
+/hardware-generator/src/main/java/com/gt/hardware/generator/MpGenerator.java
+
