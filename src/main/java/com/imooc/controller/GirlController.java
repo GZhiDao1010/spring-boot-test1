@@ -3,14 +3,18 @@ package com.imooc.controller;
 import com.imooc.domain.Girl;
 import com.imooc.repository.GirlRepository;
 import com.imooc.server.GirlServer;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 @RestController
 public class GirlController {
+
+    private final static org.slf4j.Logger logger = LoggerFactory.getLogger(GirlController.class);
 
     @Autowired
     private GirlRepository girlRepository;
@@ -24,6 +28,7 @@ public class GirlController {
      */
     @GetMapping(value = "/girls")
     public List<Girl> girlList(){
+        logger.info("girls--------");
         return girlRepository.findAll();
     }
 
@@ -34,6 +39,7 @@ public class GirlController {
     @PostMapping(value = "/girls")
     public Girl girlAdd(@Validated Girl girl, BindingResult bindingResult){
         if(bindingResult.hasErrors()){
+
             System.out.print(bindingResult.getFieldError().getDefaultMessage());
             return null;
         }
